@@ -8,10 +8,8 @@ function App() {
   
   return (
     <div className="App">
-     <h4> Crud app</h4>
+    
      <Home/>
-     
-     
     </div>
   );
 }
