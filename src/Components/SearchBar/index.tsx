@@ -97,15 +97,15 @@ const SearchBar = (post:any) => {
                     <Table>
                         <TableHead>
                             <TableRow>
-                                <TableCell padding="checkbox">
+                                <TableCell padding="checkbox" >
                                     <Checkbox inputProps={{ 'aria-label': 'select all desserts' }}
                                        onClick={toggleCheckboxes}
                                     />
-                                </TableCell>
-                                <TableCell> Name</TableCell>
-                                <TableCell> Email</TableCell>
-                                <TableCell> Role</TableCell>
-                                <TableCell>Action</TableCell>
+                                </TableCell >
+                                <TableCell padding="none"> Name</TableCell>
+                                <TableCell padding="none"> Email</TableCell>
+                                <TableCell padding="none"> Role</TableCell>
+                                <TableCell padding="none">Action</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -133,10 +133,10 @@ const SearchBar = (post:any) => {
                                                      checked={checked}
                                                     />
                                                 </TableCell>
-                                                <TableCell>{value.name}</TableCell>
-                                                <TableCell>{value.email}</TableCell>
-                                                <TableCell>{value.role}</TableCell>
-                                                <TableCell style={{ width: "60px" }}>
+                                                <TableCell padding="none">{value.name}</TableCell>
+                                                <TableCell padding="none">{value.email}</TableCell>
+                                                <TableCell padding="none">{value.role}</TableCell>
+                                                <TableCell style={{ width: "60px" }} padding="none">
                                                     <Grid style={{ display: "flex", justifyContent: "space-between" }}>
                                                         <button  
                                                          onClick={() =>editUser(value.id)}
